@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      @font-face {
+        font-family: "Newsreader";
+        src: url("./fonts/Newsreader[opsz,wght].ttf") format("truetype");
+        font-weight: 400 800;
+        font-style: normal;
+        font-display: block;
+      }
+      @font-face {
+        font-family: "IBM Plex Sans";
+        src: url("./fonts/IBMPlexSans[wdth,wght].ttf") format("truetype");
+        font-weight: 100 700;
+        font-style: normal;
+        font-display: block;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 1200px;
+        height: 630px;
+        overflow: hidden;
+        background: #0e0f0e;
+      }
+      .card {
+        position: relative;
+        width: 1200px;
+        height: 630px;
+        background:
+          radial-gradient(ellipse 78% 86% at 50% 44%, #191b19 0%, #0e0f0e 68%);
+        color: #f2f1ec;
+      }
+      .frame {
+        position: absolute;
+        inset: 36px;
+        border: 1px solid rgba(215, 221, 216, 0.22);
+        pointer-events: none;
+      }
+      .lockup {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      h1 {
+        font-family: "Newsreader", "Liberation Serif", serif;
+        font-weight: 560;
+        font-variation-settings: "opsz" 72, "wght" 560;
+        font-size: 210px;
+        line-height: 0.86;
+        letter-spacing: -0.035em;
+        color: #f2f1ec;
+      }
+      .rule-wrap {
+        position: relative;
+        width: 320px;
+        height: 22px;
+        margin-top: 30px;
+      }
+      .rule {
+        position: absolute;
+        left: 0;
+        right: 18px;
+        bottom: 2px;
+        height: 1px;
+        background: #d7ddd8;
+      }
+      .tick {
+        position: absolute;
+        right: 0;
+        bottom: 6px;
+        width: 13px;
+        height: 13px;
+      }
+      .tag {
+        margin-top: 18px;
+        font-family: "IBM Plex Sans", "Liberation Sans", sans-serif;
+        font-weight: 500;
+        font-variation-settings: "wdth" 100, "wght" 500;
+        font-size: 15px;
+        line-height: 1;
+        letter-spacing: 0.32em;
+        text-transform: uppercase;
+        color: #d7ddd8;
+        padding-left: 0.32em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="frame"></div>
+      <div class="lockup">
+        <h1 id="title">Halden</h1>
+        <div class="rule-wrap" id="rule">
+          <div class="rule"></div>
+          <svg class="tick" viewBox="0 0 13 13" aria-hidden="true">
+            <path
+              d="M1.4 9.6 L6.5 3.2 L11.6 9.6"
+              fill="none"
+              stroke="#7D9A86"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+        <p class="tag" id="tag">Private holdings</p>
+      </div>
+    </div>
+  </body>
+</html>

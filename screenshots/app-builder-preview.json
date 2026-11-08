@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Halden",
+      "hasCanvas": false,
+      "bodyTextLen": 367,
+      "bodyTextHash": "55fd548a54f3a28e7f2060a915d66b36af8e9a55544d62e6af084fe3b8b40490",
+      "bodyTextPrefix": "Private demo Sample balance $12,480.55 Private demo. No funds mo",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Halden",
+      "hasCanvas": false,
+      "bodyTextLen": 367,
+      "bodyTextHash": "55fd548a54f3a28e7f2060a915d66b36af8e9a55544d62e6af084fe3b8b40490",
+      "bodyTextPrefix": "Private demo Sample balance $12,480.55 Private demo. No funds mo",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
